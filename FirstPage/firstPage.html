@@ -9,7 +9,7 @@ metadata goes in the head-->
 <!-- content goes in the body -->
 <h1> This is my first tag!! </h1>
 
-<img src = "http://media.npr.org/assets/img/2016/03/29/ap_090911089838_sq-3271237f28995f6530d9634ff27228cae88e3440-s900-c85.jpg">
+<img src = "http://media.npr.org/assets/img/2016/03/29/ap_090911089838_sq-3271237f28995f6530d9634ff27228cae88e3440-s900-c85.jpg" height="320" width = "320">
 <h2> This is another heading! </h2>
 <h3> This is another heading!!!</h3>
 <h6> This is the smallest heading!</h6>
@@ -19,11 +19,13 @@ metadata goes in the head-->
 <p> <a href="ThingsIveLearned.html">Click here to see Things I've Learned</a> </p>
 
 <p><a href="RustyWebpage.html"> Click here to see Rusty Webpage Assessment</a></p>
-<!-- relative path -->
+<p><a href="PokemonChart.html">Click here to see Pokemon Chart</a></p>
+<p><a href="forms.html">Click here to see forms</a></p>
+<!-- relative path wwhen html -->
 This is some random text to see how long it will be in the actual 
 webspace. This is gonna be really long. blah blah blahhhhhhhhhhhhhhhhhhhhhhhhasdalksdjlafslkdnsfadf
 
-
+<hr>
 <p> This is a copy of the previous text, but broken up into 
 paragraphs </p> 
 <p> <div> This is some random text to see how long it will be in the actual </div>
@@ -63,6 +65,28 @@ webspace. </p>
 	<li> Yellow </li>
 
 </ul>
+<table>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Occupation</th>
+	</tr>
+</thead>
+<tbody>	
+	<tr>
+		<td>Mike</td>
+		<td>40</td>
+		<td>CS Professor</td>
+	</tr>
+	<tr>
+		<td>Neil</td>
+		<td>19</td>
+		<td>CS Student</td>
+	</tr>
+</tbody>
+</table>
+
 <!-- <p> , <h#> are block level elements - take up own blocks
 <b> or <strong> are inline elements - won't force to a new line 
 <h#> # (1-6) headings that are bold
@@ -74,7 +98,21 @@ webspace. </p>
 <div> groups things , helpful for styling in css, it is a block level element
 <span> groups things but is an inline element
 <img src = "url or name of pic"> insert image
-<a href = "url"> Link Text </a> (inline element) -->
+<a href = "url"> Link Text </a> (inline element)
+<table> creates the table
+<tr> creates the row for the table
+<th> = headings , <td> = elements 
+<thead> for body, <tbody> for body
+<form> to group inputs for one form (block element)
+<input type = "" placeholder ="" name="" >
+type can vary (password, text, radio, submit)
+placeholder puts text in the form
+name assigns the data a variable
+<label> or <label from =""> creates a label: Username: 
+from ="" must match id="" in the input tag
+
+-->
+
 
 </body>
 </html>
