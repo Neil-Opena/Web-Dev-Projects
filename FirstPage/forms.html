@@ -4,13 +4,13 @@
 	<title>Form Demo</title>
 </head>
 <body>
-<h1>Login</h1>
+<!-- <h1>Login</h1> -->
 
 <!-- Two attributes for form: -->
 <!-- action - where the form send data to -->
 <!-- method - what HTTP method (get/post) -->
 <!-- form = block level element -->
-<form> <!--action = "http://google.com" method = "get"> -->
+<!-- <form action = "http://google.com" method = "get"> 
 	<label>
 		Username:
 		<input type="text" placeholder = "username" name = "username">
@@ -19,17 +19,17 @@
 		Password:
 		<input type="password" placeholder="password" name = "password">
 	</label>
-	<input type="submit">
-</form>
+	<button>Login</button>
+</form> -->
 
-<h1>Alternative Login</h1>
+<h1>Login</h1> <!--action = "http://google.com" method = "get"> -->
 <form>
-	<label for="username">Username:</label>
-	<input id="username" type="text" name="username" placeholder="username">
+	<label for="username">Email:</label>
+	<input id="username" type="email" name="username" placeholder="email" required="">
 
 	<label for = "password">Password:</label>
-	<input id="password" type="password" name="password" placeholder="password">
-	<button>Login</button>
+	<input id="password" type="password" name="password" placeholder="password" required >
+	<input type = "submit"> 
 </form>
 
 
