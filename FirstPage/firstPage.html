@@ -4,6 +4,7 @@
 <!--Hi this is my comment 
 metadata goes in the head-->
 	<title>My First Page</title>
+	<link rel="stylesheet" type="text/css" href="firstPagestyling.css">
 </head>
 <body>
 <!-- content goes in the body -->
@@ -16,13 +17,15 @@ metadata goes in the head-->
 
 <hr>
 
-<p> <a href = "http://www.google.com">Click here to go to Google</a> </p>
+<p> <a href = "http://www.google.com">Google</a> </p>
 <!-- urls must be explicit (http://) -->
-<p> <a href="ThingsIveLearned.html">Click here to see Things I've Learned</a> </p>
+<p> <a href="ThingsIveLearned.html">Things I've Learned</a> </p>
 
-<p><a href="RustyWebpage.html"> Click here to see Rusty Webpage Assessment</a></p>
-<p><a href="PokemonChart.html">Click here to see Pokemon Chart</a></p>
-<p><a href="forms.html">Click here to see forms</a></p>
+<p><a href="RustyWebpage.html"> Rusty Webpage Assessment</a></p>
+<p><a href="PokemonChart.html">Pokemon Chart</a></p>
+<p><a href="formsexercise.html">Registration</a></p>
+<p><a href="todoList.html">To Do List</a></p>
+<p><a href="selectorsExercise.html">Selectors Exercise</a></p>
 <!-- relative path wwhen html -->
 This is some random text to see how long it will be in the actual 
 webspace. This is gonna be really long. blah blah blahhhhhhhhhhhhhhhhhhhhhhhhasdalksdjlafslkdnsfadf
@@ -39,7 +42,7 @@ webspace. </p>
 <h1>Login</h1>
 <form>
 	<label from = "username"> Username:</label>
-	<input type="username" name="username" placeholder = "username" required>
+	<input id = "username" type="username" name="username" placeholder = "username" required>
 
 	<label from = "password"> Password:</label>
 	<input id = "password" type="password" name="password" placeholder="password" required>
@@ -48,9 +51,21 @@ webspace. </p>
 
 </form>
 
+<form>
+	<p>Favorite Food: </p>
+	<select name="food">
+		<option value = "RICE" >Rice</option>
+		<option value = "PASTA">Pasta</option>
+		<option value = "CHICKEN">Chicken</option>
+	</select>
 
+	<p>Bio: </p>
+	<textarea name="bio" rows= 15 cols = 40></textarea>
 
+	<p> <button>Submit answers:</button> </p>
+</form>
 
+<div>
 <h4> <em> Ordered </em> List of <strong> Colors </strong> </h4>
 <ol>
 	<li> Red </li>
@@ -83,6 +98,7 @@ webspace. </p>
 	<li> Yellow </li>
 
 </ul>
+</div>
 <table>
 <thead>
 	<tr>
@@ -102,8 +118,24 @@ webspace. </p>
 		<td>19</td>
 		<td>CS Student</td>
 	</tr>
+	<tr>
+		<td>Bob</td>
+		<td>99</td>
+		<td>Pimp</td>
+	</tr>
+
+
 </tbody>
 </table>
+
+<p>Are Hotdogs Sandwiches?</p>
+<form>
+	<label for = "yes">Yes: </label>
+	<input id = "yes" type="radio" name="agreeHotdog" value="YES">
+	<label for = "no">No: </label>
+	<input id = "no" type="radio" name="agreeHotdog" value="NO">
+	<button>Let's GO!</button>
+</form>
 
 <!-- <p> , <h#> are block level elements - take up own blocks
 <b> or <strong> are inline elements - won't force to a new line 
@@ -131,6 +163,4 @@ from ="" must match id="" in the input tag
 
 -->
 
-
-</body>
-</html>
+ 

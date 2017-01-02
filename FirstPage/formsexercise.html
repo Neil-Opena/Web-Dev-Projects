@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for = "firstname">First Name:</label>
+		<input id = "firstname" type="text" name="first" placeholder="John" required>
+		<label for = "lastname">Last Name:</label>
+		<input id = "lastname" type="text" name="last" placeholder="Smith" required>
+
+		<div>
+		<label for="male">Male</label>
+		<input id="male" type="radio" name="genderChoice" value="male">
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="genderChoice" value="female">
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="genderChoice" value="other">
+		</div>
+
+		<div>
+		<label for="email">Email:</label>
+		<input id="email" type="email" name="email" placeholder="your email" required>
+		<label for="password">Password:</label>
+		<!-- <input id="password" type="password" name="password" minlength="5" maxlength="10" placeholder="your password" required> -->
+		<input id="password" type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="Password myst be between 5 to 10 characters">
+		</div>
+
+		<div>
+		<label>
+			Birthday:
+			<select name="Month">
+				<option value="Month">Month</option>
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+			</select>
+			<select name="Day">
+				<option value="Day">Day</option>
+				<option value = "1">1</option>
+				<option value = "2">2</option>
+				<option value = "3">3</option>
+			</select>
+			<select name="Year">
+				<option value="Year">Year</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+			</select>
+		</label>
+		</div>
+
+		<div>
+		<label for="terms">I agree to the terms and conditions</label>
+		<input id = "terms" type="checkbox" name="termsAgree">
+		</div>
+
+		<input type="submit">
+	</form>
+</body>
+</html>

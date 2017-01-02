@@ -1,0 +1,24 @@
+h1{
+	color:rgba(11,99,150,1.0);
+	border: 2px solid purple;
+}
+
+h2{
+	color:rgba(11,99,150,.8);
+}
+h3{
+	color:rgba(11,99,150,.6);
+}
+/*body{
+	background:rgba(99,11,02,.5); 
+}*/
+
+body{
+	background:url(http://www.longbeachny.gov/vertical/Sites/%7BC3C1054A-3D3A-41B3-8896-814D00B86D2A%7D/uploads/G_Tepper_beach_fix.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+div{
+	background:pink;
+}
