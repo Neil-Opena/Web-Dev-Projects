@@ -1,13 +1,18 @@
 html{
 	font-family: "Source Sans Pro";
 	font-weight:700;
+	background: url(https://www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/01/iyl_msh1162.jpg&w=1484);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 body{
 	border:20px solid #bdc3c7;
-	width:50%;
+	max-width: 700px;
+	width:80%;
 	margin: 20px auto;
-	padding:10px;
+	padding:20px;
+	background: rgba(255,255,255,0.8);
 }
 
 h2{
@@ -19,11 +24,20 @@ h2{
 
 .dates{
 	color:#3498db;
-	letter-spacing: 2px;
+	letter-spacing: 6px;
 	text-transform: uppercase;
 }
 
 .mark{
 	border-left:5px solid #bdc3c7;
 	padding-left: 5px;
+}
+
+hr{
+	padding:2px;
+}
+
+div{
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
