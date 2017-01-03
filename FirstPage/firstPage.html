@@ -5,10 +5,11 @@
 metadata goes in the head-->
 	<title>My First Page</title>
 	<link rel="stylesheet" type="text/css" href="firstPagestyling.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- content goes in the body -->
-<h1> This is my first tag!! </h1>
+<h1 id="diff_font"> This is my first tag!! </h1>
 
 <img src = "http://media.npr.org/assets/img/2016/03/29/ap_090911089838_sq-3271237f28995f6530d9634ff27228cae88e3440-s900-c85.jpg" height="320" width = "320">
 <h2> This is another heading! </h2>
@@ -16,17 +17,20 @@ metadata goes in the head-->
 <h6> This is the smallest heading!</h6>
 
 <hr>
-
-<p> <a href = "http://www.google.com">Google</a> </p>
-<!-- urls must be explicit (http://) -->
-<p> <a href="ThingsIveLearned.html">Things I've Learned</a> </p>
-
-<p><a href="RustyWebpage.html"> Rusty Webpage Assessment</a></p>
-<p><a href="PokemonChart.html">Pokemon Chart</a></p>
-<p><a href="formsexercise.html">Registration</a></p>
-<p><a href="todoList.html">To Do List</a></p>
-<p><a href="selectorsExercise.html">Selectors Exercise</a></p>
-<!-- relative path wwhen html -->
+<div class="cool">
+<h4> External Projects: </h4>
+<ol>
+	<li><a href = "http://www.google.com">Google</a></li>
+	<!-- urls must be explicit (http://) -->
+	<li><a href="ThingsIveLearned.html">Things I've Learned</a> </li>
+	<li><a href="RustyWebpage.html"> Rusty Webpage Assessment</a></li>
+	<li><a href="PokemonChart.html">Pokemon Chart</a></li>
+	<li><a href="formsexercise.html">Registration</a></li>
+	<li><a href="todoList.html">To Do List</a></li>
+	<li><a href="selectorsExercise.html">Selectors Exercise</a></li>
+	<!-- relative path wwhen html -->
+</ol>
+</div>
 This is some random text to see how long it will be in the actual 
 webspace. This is gonna be really long. blah blah blahhhhhhhhhhhhhhhhhhhhhhhhasdalksdjlafslkdnsfadf
 
@@ -39,7 +43,7 @@ webspace. </p>
 <p> This is gonna be really long. </p>
 <br>
 
-<h1>Login</h1>
+<h1 id="special">Login</h1>
 <form>
 	<label from = "username"> Username:</label>
 	<input id = "username" type="username" name="username" placeholder = "username" required>

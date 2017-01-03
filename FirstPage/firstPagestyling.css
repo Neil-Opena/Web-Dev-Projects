@@ -1,6 +1,8 @@
 h1{
 	color:rgba(11,99,150,1.0);
 	border: 2px solid purple;
+	font-size: 3.0em;
+	text-align: center;
 }
 
 h2{
@@ -16,9 +18,38 @@ h3{
 body{
 	background:url(http://www.longbeachny.gov/vertical/Sites/%7BC3C1054A-3D3A-41B3-8896-814D00B86D2A%7D/uploads/G_Tepper_beach_fix.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;	
+	background-size: cover;
+	font-family: "Arial";
+	font-size:20px;	
 }
 
 div{
 	background:pink;
+	border: 5px solid black;
+	width: 500px;
+	padding-left:20px;
+	margin: 0 auto;
+}
+
+#special{
+	background: rgba(50,122,31,0.7);
+	width:200px;
+	padding:10px;
+	margin:0 auto;
+}
+
+.cool{
+	background: white;
+	border: 5px solid black;
+}
+
+#diff_font{
+	font-family: 'Pacifico', cursive;
+	font-weight: regular;
+}
+
+img{
+	border: 2.5px solid green;
+	padding: 3px;
+	margin: 0 auto;
 }
