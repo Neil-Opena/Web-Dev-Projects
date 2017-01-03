@@ -1,0 +1,29 @@
+html{
+	font-family: "Source Sans Pro";
+	font-weight:700;
+}
+
+body{
+	border:20px solid #bdc3c7;
+	width:50%;
+	margin: 20px auto;
+	padding:10px;
+}
+
+h2{
+	text-transform: capitalize;
+	color:#2c3e50;
+	font-weight: 900;
+	font-size:30px;
+}
+
+.dates{
+	color:#3498db;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.mark{
+	border-left:5px solid #bdc3c7;
+	padding-left: 5px;
+}
