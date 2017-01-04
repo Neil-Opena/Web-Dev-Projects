@@ -5,18 +5,23 @@ body{
 }
 
 #Title{
-	text-align: center;
 	color:#5bc0de;
 }
 
 img[src="https://longbeachtide.files.wordpress.com/2014/10/stroud.jpg"]{
 	height:480px;
 	width: 365px;
-	display: block;
-	margin:0 auto;
+/*	display: block;
+	margin:0 auto;*/
 }
 
 #clicks{
 	margin:20px;
-	text-align: center;
+	text-align:center;
+}
+
+.mypar{
+	background: #eee;
+	margin-top:250px;
+	margin-bottom:250px;
 }
