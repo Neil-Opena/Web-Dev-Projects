@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
 
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -12,6 +14,15 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 	<title>Omnifood</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./resources/favicons/manifest.json">
+	<link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./resources/favicons/favicon.ico">
+	<meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<header>
@@ -19,7 +30,7 @@
 			<div class="row">
 				<a href="#"><img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo"></a>
 				<a href="#"><img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"></a>
-				<ul class="main-nav">
+				<ul class="main-nav js--main-nav">
 					<li>
 						<a href="#features">Food delivery</a>
 					</li>
@@ -33,7 +44,7 @@
 						<a href="#plans">Sign up</a>
 					</li>
 				</ul>
-				<a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 			</div>
 		</nav>
 		<div class="hero-text-box">
@@ -198,7 +209,7 @@
 				</div>
 			</div>
 			<div class="col span-1-of-4 box">
-				<img src="resources/img/berlin.jpg">
+				<img src="resources/img/berlin.jpg" alt="Berlin">
 				<h3>Berlin</h3>
 				<div class="city-feature">
 					<i class="ion-ios-person icon-small"></i>2300+ happy eaters
@@ -212,7 +223,7 @@
 				</div>
 			</div>
 			<div class="col span-1-of-4 box">
-				<img src="resources/img/london.jpg">
+				<img src="resources/img/london.jpg" alt="London">
 				<h3>London</h3>
 				<div class="city-feature">
 					<i class="ion-ios-person icon-small"></i>1200+ happy eaters
@@ -322,68 +333,71 @@
 		</div>
 	</section>
 
-	<section class="section-form js--section-form">
-		<div class="row">
-			<h2>We're happy to hear from you</h2>
+	<div class="map-box">
+		<div class="map"></div>
+		<div class="form-box">
+			<div class="row">
+				<h2>We're happy to hear from you</h2>
+			</div>
+			<div>
+				<form method="post" action="#" class="contact-form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="text" name="name" id="name" placeholder="Your name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="email" name="email" id="email" placeholder="Your email" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How did you find us?</label>
+						</div>
+						<div class="col span-2-of-3">
+							<select name="find-us" id="find-us">
+								<option value="friends">Friends</option>
+								<option value="search" selected>Search engine</option>
+								<option value="ad">Advertisement</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="news">Newsletter</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="checkbox" name="news" id="news" checked> Yes, please
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="message">Drop us a line</label>
+						</div>
+						<div class="col span-2-of-3">
+							<textarea name="message" placeholder="Your message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="submit" value="Send it!">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<div>
-			<form method="post" action="#" class="contact-form">
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label for="name">Name</label>
-					</div>
-					<div class="col span-2-of-3">
-						<input type="text" name="name" id="name" placeholder="Your name" required>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label for="email">Email</label>
-					</div>
-					<div class="col span-2-of-3">
-						<input type="email" name="email" id="email" placeholder="Your email" required>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label for="find-us">How did you find us?</label>
-					</div>
-					<div class="col span-2-of-3">
-						<select name="find-us" id="find-us">
-							<option value="friends">Friends</option>
-							<option value="search" selected>Search engine</option>
-							<option value="ad">Advertisement</option>
-							<option value="other">Other</option>
-						</select>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label for="news">Newsletter</label>
-					</div>
-					<div class="col span-2-of-3">
-						<input type="checkbox" name="news" id="news" checked> Yes, please
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label for="message">Drop us a line</label>
-					</div>
-					<div class="col span-2-of-3">
-						<textarea name="message" placeholder="Your message"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col span-1-of-3">
-						<label>&nbsp;</label>
-					</div>
-					<div class="col span-2-of-3">
-						<input type="submit" value="Send it!">
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
+	</div>
 
 	<footer>
 		<div class="row">
@@ -435,6 +449,8 @@
 	<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js"></script>
+	<script src="vendors/js/gmaps.js"></script>
 	<script src="resources/js/script.js"></script>
 
 </body>
