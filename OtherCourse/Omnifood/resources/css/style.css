@@ -569,6 +569,10 @@ cite img{
 	margin: 0 auto;
 }
 
+.span-1-of-5{
+	margin-left:20px;
+}
+
 input[type="text"],
 input[type="email"],
 select, 
