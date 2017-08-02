@@ -27,16 +27,26 @@ function loadData() {
                 articles.push(data.response.docs[0])
             }
             for(var i = 0; i < articles.length; i++){
-                console.log(articles[i]);
+                // console.log(articles[i]);
                 var urlNYT = articles[i].web_url;
                 var headline = articles[i].headline.main;
                 var paragraph = articles[i].snippet;
-                $nytElem.append('<li class="article"> <a href="' + url + '">' + headline +"</a><p>" + paragraph + "</p></li>");
+                $nytElem.append('<li class="article"> <a href="' + urlNYT + '">' + headline +"</a><p>" + paragraph + "</p></li>");
             }
 
     }).fail(function(){
         $nytHeaderElem.text('New York Times Articles Could Not Be Loaded');
-    });;
+    });
+
+    $.ajax('https://en.wikipedia.org/w/api.php?action=opensearch&search=' + address + '&format=json&callback=wikiCallback',{'dataType':'jsonp','jsonp':'callback',success: function(response){
+        var articleList = response[1];
+
+        for(var i = 0; i<articleList.length; i++){
+            articleStr = articleList[i];
+            var url = 'http://en.wikipedia.org/wiki/' + articleStr;
+            $wikiElem.append('<li><a href="' + url + '">' + articleStr + '</a></li>');
+        }
+    }});
     return false;
 };
 
