@@ -10,17 +10,16 @@ app.get("/", function(req, res){
 });
 
 app.get("/speak/:animal",function(req, res){
-    var animal = req.params.animal;
-    var sound;
-    if (animal === "pig"){
-        sound = "Oink";
-    }else if(animal === "cow"){
-        sound = "Moo";
-    }else if(animal === "dog"){
-        sound = "Woof Woof!";
-    }else{
-        sound = "sound";
+    var animal = req.params.animal.toLowerCase();;
+    var sounds = {
+        pig : "Oink",
+        cow : "Moo",
+        dog : "Woof Woof!",
+        cat : "I hate you human",
+        goldfish : "..."
     }
+    
+    var sound = sounds[animal];
     res.send("The " + animal + " says '" + sound + "'");
 });
 
